@@ -1,1 +1,1 @@
-alert("Holas");
+(()=>{"use strict";console.log("pagina cargada")})();
