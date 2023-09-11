@@ -1,1 +1,2 @@
-alert("Holas");
+import cargarPagina from "./load";
+cargarPagina();
