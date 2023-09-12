@@ -1,2 +1,4 @@
-import cargarPagina from "./load";
+import cargarPagina from "./load.js";
+import './style.css';
+
 cargarPagina();
