@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&family=Roboto&display=swap');
+
+body {
+    font-family: sans-serif, 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: url(wallpaper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo img{
+    width:  420px;
+    height: 300px;
+}
+
+.menu{
+    border-radius: 6px;
+    padding: 1em;
+    background-color: rgb(255, 196, 176);
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-opcion img{
+    width:  200px;
+    height: 200px; 
+}
+
+.menu-opcion{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.menu-opcion p{
+    padding: 0.4em;
+    font-family: "Reggae One";
+}
+
+.menu-opcion p:first-child{
+    font-size: calc(1rem + 0.5vw);
+    font-weight: bolder;
+    border-bottom: 1px dashed #333;
+    font-family: "Reggae One";
+}

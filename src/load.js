@@ -3,6 +3,8 @@ import Ramen1 from "./ramen1.jpg";
 import Ramen2 from "./ramen2.jpg";
 import Ramen3 from "./ramen3.jpg";
 import Ramen4 from "./ramen4.jpg";
+import Location from "./location.png";
+import Schedule from "./schedule.png";
 
 function cargarPagina() {
     const content = document.querySelector("#content");
@@ -29,17 +31,17 @@ function crearHeader() {
     divContainerTabs.classList.add('container-tabs');
     //creo los eleemntos y los meto en el contenedor
     const a1 = document.createElement("a");
-    a1.textContent = "Menu";
+    a1.textContent = "Menú";
+    a1.id = "menu";
     const a2 = document.createElement("a");
-    a2.textContent = "Location";
+    a2.textContent = "Nosotros";
+    a2.id = "nosotros";
     const a3 = document.createElement("a");
-    a3.textContent = "About";
-    const a4 = document.createElement("a");
-    a4.textContent = "Order online";
+    a3.textContent = "Pedir";
+    a3.id = "pedir";
     divContainerTabs.appendChild(a1);
     divContainerTabs.appendChild(a2);
     divContainerTabs.appendChild(a3);
-    divContainerTabs.appendChild(a4);
 
     header.appendChild(divContainerImage);
     header.appendChild(divContainerTabs);
@@ -78,11 +80,36 @@ function crearMain() {
     divContainerRamen.appendChild(imgRamen3);
     divContainerRamen.appendChild(imgRamen4);
 
+    const divContainerInfo = document.createElement("div");
+    divContainerInfo.classList.add("container-info");
+
+    const divContainerTop = document.createElement("div");
+    divContainerTop.classList.add("container-top");
+    const imgLocation = document.createElement("img");
+    imgLocation.src = Location;
+    const pLocation = document.createElement("p");
+    pLocation.textContent = "123 Calle Sakura, Shibuya-ku, Tokio 150-0002, Japón";
+    divContainerTop.appendChild(imgLocation);
+    divContainerTop.appendChild(pLocation);
+    divContainerInfo.appendChild(divContainerTop);
+
+
+    const divContainerBottom = document.createElement("div");
+    divContainerBottom.classList.add("container-bottom");
+    const imgSchedule = document.createElement("img");
+    imgSchedule.src = Schedule;
+    const pSchedule = document.createElement("p");
+    pSchedule.textContent = "Viernes - Domingo: 8:00 am - 11:00 pm"
+    divContainerBottom.appendChild(imgSchedule);
+    divContainerBottom.appendChild(pSchedule);
+    divContainerInfo.appendChild(divContainerBottom);
+
     main.appendChild(divTitulo);
     main.appendChild(divContainerRamen);
+    main.appendChild(divContainerInfo);
     
     return main;
 }
 
-export default cargarPagina;
+export {cargarPagina, crearHeader};
 
