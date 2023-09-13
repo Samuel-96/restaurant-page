@@ -37,8 +37,8 @@ function crearHeader() {
     a2.textContent = "Nosotros";
     a2.id = "nosotros";
     const a3 = document.createElement("a");
-    a3.textContent = "Pedir";
-    a3.id = "pedir";
+    a3.textContent = "Inicio";
+    a3.id = "inicio";
     divContainerTabs.appendChild(a1);
     divContainerTabs.appendChild(a2);
     divContainerTabs.appendChild(a3);

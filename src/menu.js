@@ -138,6 +138,8 @@ function cargarMenu(){
     contentWeb.appendChild(header);
     contentWeb.appendChild(divTitulo);
     contentWeb.appendChild(divMenu);
+
+
 }
 
 export {cargarMenu};
