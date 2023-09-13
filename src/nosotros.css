@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&family=Roboto&display=swap');
+
+body {
+    font-family: "Reggae One", 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: url(wallpaper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+    width: 50%;
+
+  }
+
+  h1 {
+    font-size: 35px; 
+    color: #fffefe;
+    text-align: center; 
+    padding: 0.5em; 
+    border-bottom: 2px solid #007bff; 
+    margin-bottom: 20px; 
+  }
+  
+
+  .google-map{
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .google-map iframe{
+    width: 100%;
+    border-radius: 6px;
+    height: 600px;
+    
+  }
+
+  .formulario{
+    border-radius: 6px;
+    border-style: none;
+    padding: 1em;
+    background-color: rgb(56, 59, 61);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .formulario h2{
+    color: white;
+    font-family: "Reggae One";
+  }
+
+  .formulario form{
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  input{
+    font-size: large;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3; 
+    color: #fff; 
+  }
+
+  form input:nth-child(3) {
+    height: 50px;
+  }
+
